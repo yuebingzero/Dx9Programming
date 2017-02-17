@@ -33,3 +33,5 @@
 *.log
 *.tlog
 *.idb
+*.opendb
+*.db
