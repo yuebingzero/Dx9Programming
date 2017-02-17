@@ -28,7 +28,8 @@
 *.app
  
 # others
-.ilk
-.pdb
-.log
-.tlog
+*.ilk
+*.pdb
+*.log
+*.tlog
+*.idb
