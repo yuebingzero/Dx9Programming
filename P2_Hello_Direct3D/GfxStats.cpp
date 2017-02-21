@@ -38,6 +38,37 @@ void GfxStats::onResetDevice()
 	HR(mFont->OnResetDevice());
 }
 
+void GfxStats::addVertices(DWORD n)
+{
+	mNumVertices += n;
+}
+
+void GfxStats::subVertices(DWORD n)
+{
+	mNumVertices -= n;
+}
+
+void GfxStats::addTriangles(DWORD n)
+{
+	mNumTris += n;
+}
+
+void GfxStats::subTriangles(DWORD n)
+{
+	mNumTris -= n;
+}
+
+void GfxStats::setTriCount(DWORD n)
+{
+	mNumTris = n;
+}
+
+void GfxStats::setVertexCount(DWORD n)
+{
+	mNumVertices = n;
+}
+
+
 void GfxStats::update(float dt)
 {
 	static float numFrames = 0.0f;
