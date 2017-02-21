@@ -80,6 +80,7 @@ HelloD3DApp::HelloD3DApp(HINSTANCE hInstance, std::string winCaption, D3DDEVTYPE
 	: D3DApp(hInstance, winCaption, devType, requestedVP), BULLET_SPEED(2500.0f), MAX_SHIP_SPEED(1500.0f), 
 	SHIP_ACCEL(1000.0f), SHIP_DRAG(0.85f)
 {
+	//test signed zhangyue
 	srand(time_t(0));
 
 	if(!checkDeviceCaps())
@@ -217,7 +218,6 @@ void HelloD3DApp::updateShip(float dt)
 	mShipPos += shipDir * mShipSpeed * dt;
 	mShipSpeed -= SHIP_DRAG * mShipSpeed * dt;
 }
-
 void HelloD3DApp::updateBullets(float dt)
 {
 	// Make static so that its value persists across function calls.
